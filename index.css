@@ -1,0 +1,39 @@
+#player {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background: url('img/character.png') no-repeat;
+    margin-left: 20px;
+    margin-top: 10px; 
+}
+
+#cell {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#canvas {
+    position: absolute;
+    border-radius: 25px;
+}
+
+#player.move-up {
+    background-position-x: 0px;
+    background-position-y: -192px;
+}
+
+#player.move-down {
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+#player.move-left {
+    background-position-x: 0px;
+    background-position-y: -64px;
+}
+
+#player.move-right {
+    background-position-x: 0px;
+    background-position-y: -128px;
+}
