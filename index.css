@@ -4,7 +4,7 @@
     position: relative;
     background: url('img/character.png') no-repeat;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 #cell {
@@ -21,50 +21,36 @@
 #player.move-up {
     background-position-x: 0px;
     background-position-y: -192px;
+    animation: walk-up 1s steps(4);
 }
 
 #player.move-down {
     background-position-x: 0px;
     background-position-y: 0px;
+    animation: walk-down 1s steps(4);
 }
 
 #player.move-left {
     background-position-x: 0px;
     background-position-y: -64px;
+    animation: walk-left 1s steps(4);
 }
 
 #player.move-right {
     background-position-x: 0px;
     background-position-y: -128px;
+    animation: walk-right 1s steps(4);
 }
 
-
-#player.move-up.moving {
-    animation: move-up 1s steps(4);
-}
-
-#player.move-right.moving {
-    animation: move-right 1s steps(4);
-}
-
-#player.move-down.moving {
-    animation: move-down 1s steps(4);
-}
-
-#player.move-up.moving {
-    animation: move-up 1s steps(4);
-}
-
-
-@keyframes move-up {
+@keyframes walk-up {
     100% { background-position: -256px -192px; }
 }
-@keyframes move-right {
+@keyframes walk-right {
     100% { background-position: -256px -128px; }
 }
-@keyframes move-down {
+@keyframes walk-down {
     100% { background-position: -256px 0; }
 }
-@keyframes move-up {
+@keyframes walk-left {
     100% { background-position: -256px -64px; }
 }
